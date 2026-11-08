@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="so">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#090b13">
+    <meta name="description" content="Portfolio-ga EGN. Mahad Mohamed Saciiid — frontend iyo backend.">
+    <title>EGN. Mahad Mohamed Saciiid — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <div class="page-glow page-glow-one" aria-hidden="true"></div>
+    <div class="page-glow page-glow-two" aria-hidden="true"></div>
+    <div class="shooting-star" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="EGN home"><span class="brand-mark">E.</span><span>EGN<span class="brand-dot">/</span></span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#about" data-i18n="navAbout">Ku saabsan</a>
+        <a href="#photos" data-i18n="navPhotos">Sawirro</a>
+        <a href="#media" data-i18n="navMedia">Muuqaal & hees</a>
+        <a href="#work" data-i18n="navWork">Shaqooyin</a>
+        <a href="#contact" data-i18n="navContact">Xiriir</a>
+      </nav>
+      <div class="header-actions">
+        <div class="language-switch" role="group" aria-label="Choose language">
+          <button type="button" class="language-button active" data-lang="so" aria-pressed="true">SO</button>
+          <button type="button" class="language-button" data-lang="ar" aria-pressed="false">ع</button>
+          <button type="button" class="language-button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <button class="listen-button" type="button" id="listen-button">
+          <span class="sound-icon" aria-hidden="true">♫</span><span data-i18n="listen">Dhageyso</span>
+        </button>
+        <span class="visually-hidden" id="listen-status" aria-live="polite"></span>
+        <button class="menu-button" id="menu-button" type="button" aria-label="Fur liiska" data-i18n-aria="openMenu" aria-expanded="false"><span></span><span></span></button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section-wrap" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span><span data-i18n="available">Diyaar u ah fursado cusub</span></p>
+          <h1><span data-i18n="heroGreeting">Salaan, waxaan ahay</span><br><span class="name-line">EGN. Mahad<br class="name-break"> Mohamed <span class="name-accent">Saciiid.</span></span></h1>
+          <p class="profession-label"><span class="profession-star">✳</span><span data-i18n="profession">Waxaan ahay Web Developer</span></p>
+          <p class="hero-description" data-i18n="heroDescription">Waxaan dhisaa waayo-aragnimo dijitaal ah oo qurux badan, laga bilaabo muuqaalka hore ilaa awoodda ka dambaysa.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work"><span data-i18n="seeWork">Eeg shaqadayda</span><span aria-hidden="true">↗</span></a>
+            <a class="button button-quiet" href="#contact"><span data-i18n="contactMe">Ila soo xiriir</span><span aria-hidden="true">→</span></a>
+          </div>
+          <div class="hero-meta"><span>FRONTEND</span><i></i><span>BACKEND</span><i></i><span>3D WEB</span></div>
+        </div>
+
+        <div class="hero-art" aria-label="3D EGN monogram artwork">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="orbit orbit-three"></div>
+          <div class="art-spark spark-one">✳</div>
+          <div class="art-spark spark-two">✦</div>
+          <div class="art-card photo-hero-card" id="art-card">
+            <img class="hero-portrait" src="/images/mahad-portrait.jpg" alt="Sawirka Mahad Mohamed Saciiid." data-i18n-alt="portraitAlt" fetchpriority="high">
+            <div class="card-topline"><span>CREATIVE DEVELOPER</span><span>01 — 03</span></div>
+            <span class="portrait-badge"><span class="status-dot"></span><span data-i18n="portraitBadge">KAN AYAAN AHAY</span></span>
+            <div class="card-bottomline"><span>MAHAD<br>MOHAMED SACIIID</span><span class="card-arrow">↗</span></div>
+          </div>
+          <div class="floating-flag" aria-label="Calanka Soomaaliya" data-i18n-aria="somaliFlag">
+            <span class="flag-surface"><span>★</span></span>
+            <span class="flag-caption" data-i18n="somaliPride">SOOMAALI AYAAN AHAY</span>
+          </div>
+          <div class="floating-tag tag-code"><span class="tag-symbol">{ }</span><span>Clean code<br><b>Built with care</b></span></div>
+          <div class="floating-tag tag-stack"><span class="stack-dot"></span><span>Full-stack<br><b>Creative mind</b></span></div>
+          <p class="art-caption" data-i18n="artCaption">SOOMAALI • HAL-ABUUR • HORMAR <span>✦</span></p>
+        </div>
+        <aside class="hero-profile-note">
+          <p class="eyebrow"><span class="status-dot"></span><span data-i18n="heroAsideLabel">DIIRADAYDA</span></p>
+          <h2 data-i18n="heroAsideTitle">Naqshad & horumarin</h2>
+          <p data-i18n="heroAsideText">Waxaan abuuraa bogag web oo qurux badan, degdeg ah, una shaqeeya qof walba.</p>
+          <a class="button button-quiet" href="#work"><span data-i18n="seeWork">Eeg shaqadayda</span><span aria-hidden="true">↗</span></a>
+        </aside>
+        <a class="scroll-cue" href="#about" aria-label="Scroll to about section"><span></span><span data-i18n="scroll">Hoos u soco</span></a>
+      </section>
+
+      <section class="about section-wrap section-space" id="about">
+        <div class="section-heading">
+          <p class="eyebrow section-number">01 / <span data-i18n="aboutLabel">ANIGA</span></p>
+          <h2 data-i18n="aboutTitle">Wax yar <span class="text-accent">iga baro.</span></h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-story">
+            <p class="about-copy" data-i18n="aboutText">Waxaan ahay Soomaali, kuna faanaa afkayga iyo dhaqankayga. Waxaan jeclahay barashada, naqshadaynta webka, iyo samaynta waxyaabo cusub.</p>
+            <div class="identity-note" data-reveal>
+              <span class="somali-flag" aria-label="Calanka Soomaaliya"><span>★</span></span>
+              <span class="identity-copy"><b data-i18n="identityTitle">Soomaali ayaan ahay</b><small data-i18n="identityText">Afka, dhaqanka iyo dadkayga waan ku faanaa.</small></span>
+              <span class="identity-code" aria-hidden="true">SO / 252</span>
+            </div>
+          </div>
+          <div class="skill-panel">
+            <div class="skill-panel-head"><span data-i18n="whatIDo">Waxa aan qabto</span><span class="panel-cross">✳</span></div>
+            <div class="skill-row"><span class="skill-index">01</span><span>Frontend Development</span><span class="skill-arrow">↗</span></div>
+            <div class="skill-row"><span class="skill-index">02</span><span>Backend Development</span><span class="skill-arrow">↗</span></div>
+            <div class="skill-row"><span class="skill-index">03</span><span>3D Web Experiences</span><span class="skill-arrow">↗</span></div>
+            <div class="skill-row"><span class="skill-index">04</span><span data-i18n="alwaysLearning">Barasho joogto ah</span><span class="skill-arrow">↗</span></div>
+          </div>
+        </div>
+        <form class="reader-card" id="reader-form">
+          <div class="reader-heading">
+            <span class="reader-icon" aria-hidden="true">♫</span>
+            <span><b data-i18n="readerTitle">Akhriste qoraal</b><small data-i18n="readerHint">Qor ama ku dheji qoraal si cod loogu akhriyo.</small></span>
+            <span class="reader-ai-tag">VOICE</span>
+          </div>
+          <label class="visually-hidden" for="reader-text" data-i18n="readerTextLabel">Qoraalka la akhrinayo</label>
+          <textarea id="reader-text" rows="2" maxlength="4000" data-i18n-placeholder="readerPlaceholder" placeholder="Halkan ku qor qoraalka aad rabto in cod lagu akhriyo..."></textarea>
+          <div class="reader-controls">
+            <label class="visually-hidden" for="reader-language" data-i18n="readerLanguage">Luqadda codka</label>
+            <select id="reader-language" aria-label="Luqadda codka" data-i18n-aria="readerLanguage">
+              <option value="so" data-i18n="somali">Somali</option>
+              <option value="ar" data-i18n="arabic">Carabi</option>
+              <option value="en" data-i18n="english">English</option>
+            </select>
+            <button class="reader-play" type="submit"><span aria-hidden="true">▶</span><span data-i18n="readText">Akhri qoraalka</span></button>
+            <button class="reader-stop" id="reader-stop" type="button" data-i18n="stopReading">Jooji</button>
+          </div>
+          <p class="reader-credit" data-i18n="browserVoice">Codka waxaa bixiya browser-kaaga.</p>
+          <p class="reader-status" id="reader-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section class="photos section-wrap section-space" id="photos">
+        <div class="section-heading work-heading">
+          <div>
+            <p class="eyebrow section-number">02 / <span data-i18n="photosLabel">SAWIRRO</span></p>
+            <h2 data-i18n="photosTitle">Qisadayda <span class="text-accent">sawirro ku jirta.</span></h2>
+          </div>
+          <p class="work-intro" data-i18n="photosIntro">Daqiiqado ka mid ah waxbarashadayda, shaqadayda, iyo safarkayga.</p>
+        </div>
+        <div class="photo-grid">
+          <button class="photo-card photo-card-event" type="button" data-photo-caption="photoEventCaption" data-reveal>
+            <img src="/images/somaville-event.jpg" alt="Mahad iyo ka qaybgalayaal munaasabad Somaville Innovation Hub." data-i18n-alt="photoEventAlt" loading="lazy">
+            <span class="photo-shade"></span>
+            <span class="photo-open" aria-hidden="true">↗</span>
+            <span class="photo-caption" data-i18n="photoEventCaption">Munaasabadda Somaville Innovation Hub</span>
+          </button>
+          <button class="photo-card photo-card-study" type="button" data-photo-caption="photoStudyCaption" data-reveal>
+            <img src="/images/coding-session.jpg" alt="Mahad oo laptop ku shaqaynaya fasalka dhexdiisa." data-i18n-alt="photoStudyAlt" loading="lazy">
+            <span class="photo-shade"></span>
+            <span class="photo-open" aria-hidden="true">↗</span>
+            <span class="photo-caption" data-i18n="photoStudyCaption">Waxbarasho iyo tignoolajiyad</span>
+          </button>
+          <button class="photo-card photo-card-portrait" type="button" data-photo-caption="photoPortraitCaption" data-reveal>
+            <img src="/images/mahad-portrait.jpg" alt="Sawirka Mahad Mohamed Saciiid." data-i18n-alt="portraitAlt" loading="lazy">
+            <span class="photo-shade"></span>
+            <span class="photo-open" aria-hidden="true">↗</span>
+            <span class="photo-caption" data-i18n="photoPortraitCaption">Mahad Mohamed Saciiid</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="media-section section-wrap section-space" id="media">
+        <div class="section-heading work-heading">
+          <div>
+            <p class="eyebrow section-number">03 / <span data-i18n="mediaLabel">DAAWO & DHAGEYSO</span></p>
+            <h2 data-i18n="mediaTitle">Waxaan daawado <span class="text-accent">iyo dhageysto.</span></h2>
+          </div>
+          <p class="work-intro" data-i18n="mediaIntro">Cashar web development ah iyo hees aan jeclahay.</p>
+        </div>
+        <div class="media-grid">
+          <article class="media-card media-card-code">
+            <div class="media-stage">
+              <div class="media-poster poster-code" aria-hidden="true">
+                <span class="poster-orbit"></span>
+                <span class="poster-code-mark">&lt;/&gt;</span>
+                <span class="poster-kicker">LEARN · BUILD · CREATE</span>
+              </div>
+              <button class="media-play" type="button" data-video-id="GxmfcnU3feo" data-video-title="roadmapTitle" data-video-label="playVideo" aria-label="Play The Complete Web Development Roadmap">
+                <span class="play-icon" aria-hidden="true">▶</span>
+                <span data-i18n="playVideo">Fiidyowga daawo</span>
+              </button>
+            </div>
+            <div class="media-info">
+              <p class="media-kind"><span class="media-live-dot"></span><span data-i18n="webLesson">CASHAR WEB DEVELOPMENT</span></p>
+              <h3 data-i18n="roadmapTitle">The Complete Web Development Roadmap</h3>
+              <p class="media-author" data-i18n="roadmapAuthor">Programming with Mosh</p>
+              <a class="media-youtube-link" href="https://youtu.be/GxmfcnU3feo" target="_blank" rel="noopener noreferrer"><span data-i18n="openYouTube">YouTube ka fur</span><span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="media-card media-card-song">
+            <div class="media-stage">
+              <div class="media-poster poster-song" aria-hidden="true">
+                <span class="song-disc"><span>♫</span></span>
+                <span class="equalizer"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+                <span class="poster-kicker">SOMALI MUSIC · ON REPEAT</span>
+              </div>
+              <button class="media-play" type="button" data-video-id="wloygQe03Vo" data-video-title="songTitle" data-video-label="playSong" aria-label="Play FARXAD by King Khalid and Ikran Arale">
+                <span class="play-icon" aria-hidden="true">▶</span>
+                <span data-i18n="playSong">Heesta dhageyso</span>
+              </button>
+            </div>
+            <div class="media-info">
+              <p class="media-kind"><span class="media-live-dot song-dot"></span><span data-i18n="favoriteSong">HEESTA AAN JECLAHAY</span></p>
+              <h3 data-i18n="songTitle">Hees Cusub FARXAD Bye King Khalid ft Ikran Arale [Official Video]</h3>
+              <p class="media-author" data-i18n="songArtist">King Khalid ft. Ikran Arale</p>
+              <a class="media-youtube-link" href="https://youtu.be/wloygQe03Vo" target="_blank" rel="noopener noreferrer"><span data-i18n="openYouTube">YouTube ka fur</span><span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
+        <p class="media-note" data-i18n="mediaNote">Riix si aad YouTube-ka ugu daawato ama ugu dhageysato.</p>
+      </section>
+
+      <section class="work section-wrap section-space" id="work">
+        <div class="section-heading work-heading">
+          <div><p class="eyebrow section-number">04 / <span data-i18n="workLabel">DOORASHO</span></p><h2 data-i18n="workTitle">Waxaan sameeyo<span class="text-accent">.</span></h2></div>
+          <p class="work-intro" data-i18n="workIntro">Fikrado loo rogay bogag web oo degdeg ah, shaqaynaya, oo leh shakhsiyad.</p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card project-large">
+            <div class="project-art project-art-one"><div class="project-window"><div class="window-dots"><i></i><i></i><i></i></div><div class="window-layout"><div class="window-sidebar"></div><div class="window-content"><span></span><span></span><span></span><div class="window-chart"></div></div></div></div><span class="project-art-label">01 / DIGITAL</span></div>
+            <div class="project-info"><div><p class="project-type" data-i18n="projectTypeOne">Naqshad & horumarin</p><h3 data-i18n="projectOne">Waayo-aragnimo dijitaal ah</h3></div><span class="project-link" aria-hidden="true">↗</span></div>
+          </article>
+          <article class="project-card">
+            <div class="project-art project-art-two"><div class="sphere"><div class="sphere-ring"></div></div><span class="project-art-label">02 / 3D SPACE</span></div>
+            <div class="project-info"><div><p class="project-type" data-i18n="projectTypeTwo">Naqshad is-dhexgal ah</p><h3 data-i18n="projectTwo">Adduun saddex-geesood ah</h3></div><span class="project-link" aria-hidden="true">↗</span></div>
+          </article>
+          <article class="project-card">
+            <div class="project-art project-art-three"><div class="dashboard"><div class="dashboard-top"><span></span><span></span></div><div class="dashboard-number">24<span>/7</span></div><div class="dashboard-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div><span class="project-art-label">03 / WEB APP</span></div>
+            <div class="project-info"><div><p class="project-type" data-i18n="projectTypeThree">Frontend & backend</p><h3 data-i18n="projectThree">Web app casri ah</h3></div><span class="project-link" aria-hidden="true">↗</span></div>
+          </article>
+        </div>
+        <p class="project-note" data-i18n="projectNote">Kaadhadhkani waa tusaalooyin naqshadeed; shaqooyinka gaarka ah waxaa lagu dari karaa markaad ii soo dirto.</p>
+      </section>
+
+      <section class="contact section-wrap section-space" id="contact">
+        <div class="contact-card">
+          <div class="contact-copy"><p class="eyebrow section-number">05 / <span data-i18n="contactLabel">XIRIIR</span></p><h2 data-i18n="contactTitle">Ma haysaa fikrad?<br><span class="text-accent">Aan wada dhisno.</span></h2><p data-i18n="contactText">Ii soo dir fariin ama si toos ah iigala soo xiriir WhatsApp.</p><a class="whatsapp-link" href="https://wa.me/252610997387" target="_blank" rel="noreferrer"><span class="whatsapp-icon">↗</span><span>WhatsApp <b>+252 610 997 387</b></span></a></div>
+          <form class="contact-form" id="contact-form">
+            <label for="visitor-name" data-i18n="yourName">Magacaaga</label>
+            <input id="visitor-name" name="name" type="text" maxlength="100" required placeholder="..." autocomplete="name">
+            <label for="visitor-message" data-i18n="yourMessage">Fariintaada</label>
+            <textarea id="visitor-message" name="message" maxlength="2000" rows="4" required placeholder="..."></textarea>
+            <button class="button button-primary submit-button" type="submit"><span data-i18n="sendMessage">Dir fariinta</span><span aria-hidden="true">↗</span></button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <dialog class="photo-lightbox" id="photo-lightbox" aria-label="Sawirka oo la weyneeyay" data-i18n-aria="lightboxLabel">
+      <button class="lightbox-close" type="button" aria-label="Xir sawirka" data-i18n-aria="closePhoto">×</button>
+      <img class="lightbox-image" id="lightbox-image" src="" alt="">
+      <p class="lightbox-caption" id="lightbox-caption"></p>
+    </dialog>
+
+    <footer class="site-footer section-wrap"><a class="brand footer-brand" href="#home"><span class="brand-mark">E.</span><span>EGN<span class="brand-dot">/</span></span></a><p data-i18n="footerText">Naqshadeeyay oo lagu dhisay xiise.</p><a href="#home" class="back-top"><span data-i18n="backTop">Bilowga ku noqo</span> ↑</a><span class="copyright">© 2026</span></footer>
+  </body>
+</html>
